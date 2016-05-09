@@ -1,0 +1,286 @@
+@charset "UTF-8";
+
+
+
+
+.float_wrapper.mt .main_title{
+    width:440px;
+    float: left;
+}
+.float_wrapper.mt .main_title .lead_msg p{
+    font-weight: bold;
+    font-size:120%;
+    margin-bottom: 20px;
+    padding-top:10px;
+}
+.float_wrapper.mt .main_title .lead_msg p strong{
+    font-weight: bold;
+}
+.float_wrapper.mt .pic{
+    width:500px;
+    float: right;
+}
+
+
+
+/*
+contents_tab custom
+*/
+.contents_tab{
+    overflow: hidden;
+    margin-bottom: 24px;
+}
+.contents_tab li{
+    width:228px;
+    float:left;
+    margin-right: 10px;
+}
+.contents_tab li:last-child{
+    margin-right: 0px;
+}
+
+
+
+/*
+.shadow_box custom
+*/
+main .shadow_box{
+    padding-top:30px;
+}
+/*
+main .sect1,
+main .sect2,
+main .sect3,
+main .sect4{
+    margin: 0 0 62px;
+}
+main .sect4{
+    margin: 0 28px 0px;
+}
+*/
+main .sect1 .lead,
+main .sect2 .lead,
+main .sect3 .lead,
+main .sect4 .lead{
+    margin: 0 0 30px;
+}
+
+
+
+
+
+/*
+.slickslide
+*/
+.slickslide_wrapper{
+    position: relative;
+    margin: 0 auto 20px auto;
+}
+/* Arrows */
+.slickslide_wrapper .b_slider_prev,
+.slickslide_wrapper .b_slider_next{
+    position: absolute;
+    top:51px;
+    cursor: pointer;
+}
+.slickslide_wrapper .b_slider_prev:hover,
+.slickslide_wrapper .b_slider_next:hover{
+    opacity: 0.6
+}
+.slickslide_wrapper .b_slider_prev{
+    left:0px;
+}
+.slickslide_wrapper .b_slider_next{
+    right:0px;
+}
+
+.slider-nav{
+    margin:0 70px;
+}
+.slider-nav li{
+    margin:0 3px;
+}
+.slider-nav li p{
+    display: inline-block;
+    padding-bottom:3px;
+    border-bottom: #fff 2px solid;
+}
+.slider-nav li.on-active p{
+    border-bottom: red 2px solid;
+}
+
+
+
+
+ul.slickslide {
+    padding-left:0;
+    max-width:100%;
+}
+ul.slickslide li img {
+    width:100%;
+    height:auto;
+}
+/* loading issue fix; https://github.com/kenwheeler/slick/issues/790 */
+.slick-slider .slick-track {
+    min-width:100%;
+}
+.slider-nav .slick-prev {
+    margin-top:-15px;
+    height:24px;
+    left: -30px;
+}
+.slider-nav .slick-next {
+    margin-top:-15px;
+    height:24px;
+    right: -30px;
+}
+.slider-nav .slick-prev:before{
+    content: url(../../../common/img/slider/b_arrow_tn_prev.png);
+}
+.slider-nav [dir='rtl'] .slick-prev:before{
+    content: url(../../../common/img/slider/b_arrow_tn_prev.png);
+}
+
+.slider-nav .slick-next:before{
+    content: url(../../../common/img/slider/b_arrow_tn_next.png);
+}
+.slider-nav [dir='rtl'] .slick-next:before{
+    content: url(../../../common/img/slider/b_arrow_tn_next.png);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .shadow_box_wrapper{
+        width:92%;
+        margin:0 auto 0 auto;
+        overflow: hidden;
+    }
+
+    .float_wrapper.mt .main_title{
+        width:100%;
+        float:none;
+    }
+    .float_wrapper.mt .main_title .lead_msg p{
+    }
+    .float_wrapper.mt .main_title .lead_msg p strong{
+        font-weight: bold;
+    }
+    .float_wrapper.mt .pic{
+        width:100%;
+        float:none;
+    }
+    .float_wrapper.mt .pic img{
+        width:auto;
+        float:none;
+    }
+
+
+
+    /*
+    contents_tab custom
+    */
+    .contents_tab{
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+    .contents_tab li{
+        width:47%;
+        float:left;
+        margin:0 1% 10px 1%;
+    }
+    .contents_tab li:nth-child(3),
+    .contents_tab li:nth-child(4){
+        margin:0 1% 0 1%;
+    }
+    .contents_tab li:last-child{
+        margin-right: 1%;
+    }
+
+
+
+    /*==============================================================
+    slider
+    ==============================================================*/
+    .sect2 .slickslide,
+    .sect3 .slickslide,
+    .sect4 .slickslide{
+        margin:0 auto 20px auto ;
+        width:100%;
+    }
+    .sect1 .slickslide,
+    .sect2 .slickslide,
+    .sect3 .slickslide,
+    .sect4 .slickslide{
+        width:100%;
+        height: auto;
+        margin:0 auto;
+    }
+
+    /* Arrows */
+    .sect1 .b_slider_prev,
+    .sect1 .b_slider_next,
+    .sect2 .b_slider_prev,
+    .sect2 .b_slider_next,
+    .sect3 .b_slider_prev,
+    .sect3 .b_slider_next{
+        position: absolute;
+        cursor: pointer;
+        width:6.133333%;
+        height: auto;
+        top:0;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 530px) {
+    .float_wrapper.mt .pic img{
+        width:100%;
+        float:none;
+    }
+    .contents_tab li{
+        width:97%;
+        float:none;
+        margin:0 1% 10px;
+    }
+    .contents_tab li:nth-child(3){
+        margin:0 1% 10px 1%;
+    }
+    .contents_tab li:last-child{
+        margin:0 1% 0;
+    }
+    .slider-nav{
+        margin:0 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+
+}

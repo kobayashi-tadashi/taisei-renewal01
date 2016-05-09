@@ -1,0 +1,121 @@
+@charset "utf-8";
+/*
+page_header
+*/
+.header_wrapper{
+	width:100%;
+	background: #fff;
+/*	height:103px;*/
+}
+.header_wrapper .header_border{
+	width:100%;
+	border-bottom: 3px solid #ddd;
+}
+.page_header{
+	width:980px;
+	margin:0 auto;
+	height:103px;
+	position: relative;
+}
+.page_header h1{
+	position: absolute;
+	top:10px;
+	left:0px;
+	padding:0;
+	margin:0;
+	width:184px;
+}
+
+
+.page_header .housing-logo{
+	position: absolute;
+	right:0px;
+	top:12px;
+}
+
+
+
+
+/*---------------------------------------------------------
+sticked
+---------------------------------------------------------*/
+.header_wrapper.sticked{
+	height:53px;
+	position:absolute;
+	top:0px;
+	width:100%:
+	z-index:50;
+}
+.header_wrapper.sticked .page_header{
+	height: auto;
+	min-height:53px;
+}
+.header_wrapper.sticked h1{
+	position:absolute;
+	top:11px;
+	text-align: left;
+}
+.header_wrapper.sticked h1 img{
+	width:136px;
+	height: auto;
+}
+.header_wrapper.sticked .housing-logo{
+	display:none;
+}
+
+.menu.sb-toggle-left{
+	position: relative;
+	margin-top:-22px;
+	margin-left:12px;
+	width:30px;
+	height:30px;
+	display: none;
+	cursor: pointer;
+}
+.menu.sb-toggle-left img{
+	width:30px;
+	height:30px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+	.header_wrapper,
+	.header_wrapper.sticked{
+		height:53px;
+		position:absolute;
+		top:0px;
+		width:100%:
+		z-index:50;
+		text-align: center;
+	}
+	.header_wrapper .page_header,
+	.header_wrapper.sticked .page_header{
+		width:100%;
+		height: auto;
+		min-height:53px;
+		position: relative;
+	}
+	.header_wrapper .page_header h1,
+	.header_wrapper.sticked .page_header h1{
+		width:136px;
+		position:relative;
+		margin:0 auto;
+		text-align: center;
+	}
+	.header_wrapper .page_header h1 img{
+		width:136px;
+		height: auto;
+	}
+	.header_wrapper .page_header .housing-logo{
+		display:none;
+	}
+	.menu.sb-toggle-left {
+		display: block;
+	}
+}
